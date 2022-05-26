@@ -1,0 +1,60 @@
+nav{
+    height: 70px;
+    background-color: #090b13;
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    overflow-x: hidden;
+}
+
+.logo{
+    width: 82px;
+}
+
+.navMenu{
+    display: flex;
+    flex: 1;
+    margin-left: 26px;
+    align-items: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+
+a img{
+    height: 20px;
+    padding: 1px 5px 0px 5px;
+}
+
+a span{
+    font-size: 13px;
+    letter-spacing: 1.42px;
+    position: relative;
+}
+a span::after {
+    content: "";
+    background: white;
+    height: 2.5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    width: 0;
+    transition: 0.5s;
+    margin: auto;
+}
+a span:hover::after{
+    width: 100%
+};
+
+.userImg{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+}
